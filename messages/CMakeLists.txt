@@ -18,21 +18,11 @@ find_package(std_msgs REQUIRED)
 set(msg_files
   "msg/Robotiq2FGripperRobotInput.msg"
   "msg/Robotiq2FGripperRobotOutput.msg"
-  "msg/Error.msg"
-  "msg/UserPrompt.msg"
-  "msg/MiRState.msg"
-  "msg/Twist2D.msg"
-)
-
-set(srv_files
-  "srv/MirAppendMission.srv"
-  "srv/MirCancelMission.srv"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
-  ${srv_files}
-  DEPENDENCIES builtin_interfaces geometry_msgs std_msgs
+  DEPENDENCIES builtin_interfaces std_msgs
 )
 
 ament_export_dependencies(rosidl_default_runtime)
