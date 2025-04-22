@@ -38,3 +38,4 @@ ROS2 Jazzy port by Falken98
     ```
     ros2 topic pub /Robotiq2FGripperRobotOutput messages/msg/Robotiq2FGripperRobotOutput "{r_pr: 255, r_sp: 50, r_fr: 50}"
     ```
+    > __NOTE:__ Set value `r_pr:` to `0`  and run command to open griper
