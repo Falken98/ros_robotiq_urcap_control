@@ -12,8 +12,10 @@ ROS2 Jazzy port by Falken98
 ## Using this repository
 
 1. Select the src folder in your desired workspace and download the repository
+    ```
     cd ros2_ws/src
     git clone ROS2-jazzy https://github.com/frdedynamics/ros_robotiq_urcap_control.git 
+    ```
 
 2. Install required package dependencies
     ```
