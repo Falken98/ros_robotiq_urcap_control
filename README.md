@@ -6,3 +6,5 @@ BASED ON: https://dof.robotiq.com/discussion/1962/programming-options-ur16e-2f-8
 ROS/Python2 port by felixvd  (use py3-master brach for Python3 and ROS noetic)
 
 Messing around, SID and Hand-E testing by MOJO
+
+ROS2 Jazzy port by Falken98
