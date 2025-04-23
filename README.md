@@ -11,31 +11,33 @@ ROS2 Jazzy port by Falken98
 
 ## Using this repository
 
-1. Select the src folder in your desired workspace and download the repository
+1. **Select the src folder in your desired workspace and download the repository**
     ```
     cd ros2_ws/src
     git clone ROS2-jazzy https://github.com/frdedynamics/ros_robotiq_urcap_control.git 
     ```
     > __NOTE:__ Change `ros2_ws` to the path to your workspace
 
-2. Install required package dependencies
+2. **Install required package dependencies**
     ```
     rosdep update && rosdep install --ignore-src --from-paths src -y
     ```
 
-3. Build your workspace
+3. **Build your workspace**
     ```
     cd ros2_ws
     colcon build --symlink-install
     ```
 
-4. Running launch file
+4. **Running launch file**
     ```
     ros2 launch ros2_robotiq_urcap_control ros2_robotiq_urcap_control.launch.py
     ```
 
-5. You can test the node you started by opening a new terminal an run the following command
+5. **You can test the node you started by opening a new terminal an run the following command**
     ```
     ros2 topic pub /Robotiq2FGripperRobotOutput messages/msg/Robotiq2FGripperRobotOutput "{r_pr: 255, r_sp: 50, r_fr: 50}"
     ```
     > __NOTE:__ Set value `r_pr:` to `0`  and run command to open griper
+
+    
